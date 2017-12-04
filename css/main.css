@@ -1,0 +1,260 @@
+/* write your style definitions here or create css files and include them here */
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #F9F9FB;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #4e6876;
+}
+
+.header {
+  height: 80px;
+  background-color: #1f2532;
+}
+
+.search-input {
+  position: relative;
+  margin: 20px 80px;
+  padding-left: 10px;
+  height: 40px;
+  width: 160px;
+  background-color: #343a44;
+  border: none;
+  border-radius: 1px;
+  font-size: 14px;
+  color: white;
+  outline: 0;
+}
+
+/*****************
+      NOTES
+*****************/
+
+.notes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.note,
+.open-note {
+  height: 260px;
+  min-height: 260px;
+  width: 300px;
+  min-width: 300px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 3px #AAB1B5;
+}
+
+.note-color {
+  height: 6px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.color-menu {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.color-box {
+  flex-direction: horizontal;
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+  border-radius: 2px;
+  border-color: #AAB1B5;
+}
+
+/*****************
+    NOTE TEXT
+*****************/
+
+.note-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #F9F9FB;
+}
+
+.note-title-text {
+  color: #4F6775;
+  font-size: 18px;
+}
+
+.note-body-text {
+  margin: 20px;
+  color: #4F6775;
+}
+
+
+/*****************
+     BUTTONS
+*****************/
+
+.button {
+  height: 50px;
+  width: 160px;
+  background-color: #56b6bf;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-add-note {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  margin: 20px 80px;
+}
+
+.button-cancel,
+.button-add,
+.button-save,
+.button-delete {
+  width: 100px;
+  margin: 20px 40px;
+  flex-direction: horizontal;
+}
+
+.button-cancel {
+  background-color: #D2D3D4;
+}
+
+.button-add.active,
+.button-save.active {
+  background-color: #D2D3D4;
+}
+
+.button-save.active,
+.button-save.inactive {
+  background-color: #B1DFE2;
+}
+
+
+/*****************
+      ICONS
+*****************/
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  margin: 5px;
+  height: 16px;
+  width: 16px;
+}
+
+img.icon-delete {
+  width: 12px;
+}
+
+
+/*****************
+   DELETE MODAL
+*****************/
+
+.delete-modal {
+  position: relative;
+  margin: 100px auto;
+  height: 250px;
+  width: 400px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 3px #AAB1B5;
+}
+
+.delete-title {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.delete-body {
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.delete-footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/*****************
+   NOTE MODAL
+*****************/
+
+.note-modal {
+  height: 500px;
+  width: 400px;
+  position: relative;
+  margin: 100px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 3px #AAB1B5;
+}
+
+.note-modal-color {
+  height: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.note-modal-form input {
+  height: 20px;
+  padding: 22px;
+  width: 88%;
+  border: none;
+  outline: 0;
+  font-size: 20px;
+}
+
+.note-modal-form input::placeholder {
+  color: #DDDBDB;
+  font-style: italic;
+}
+
+.note-text {
+  height: 250px;
+  max-height: 250px;
+  width: 360px;
+  max-width: 360px;
+  margin: 20px;
+  border: none;
+  outline: 0;
+}
+
+.note-text::placeholder {
+  color: #DDDBDB;
+  font-size: 12px;
+}
+
+.note-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  height: 100px ;
+  width: 100%;
+  background-color: #FAFAFA;
+}
